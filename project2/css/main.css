@@ -209,7 +209,7 @@ section{
     color: var(--pure);
 }
 
-.card img{
+.services .card-wrapper .card img{
     width:50px;
     height: 50px;
     position: absolute;
@@ -233,3 +233,210 @@ section{
     color: var(--ternary);
     line-height: 1.6;
 }
+
+.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.jpg);
+    background-position: -70% 20%;
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 13rem;
+}
+
+.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+.slide p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+.slide span{
+    font-size: 0.8rem;
+}
+
+.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+
+}
+
+.reviews .slider-dots{
+    margin-top: 3rem;
+}
+
+.reviews .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider-dots .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+
+.work{
+    background: var(--light);
+}
+
+.work .card-wrapper .card img{
+    width: 100%;
+    height: 300px;
+}
+
+.work .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+.work .card-wrapper .card{
+    position: relative;
+    height: 300px;
+}
+
+.work .card-wrapper .card .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+.work .card-wrapper .card .overlay a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.contact .card-wrapper .card img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 3rem;
+}
+
+.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.contact .card-wrapper .card{
+    text-align: center;
+}
+
+.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.7rem;
+}
+
+.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.7rem;
+}
+
+.contact .input-wrap-2 textarea:focus, .contact input:focus{
+    outline: none;
+}
+
+.btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--dark);
+    width: ;
+    color: var(--light);
+}
+
+footer h3 span{
+    color: var(--danger);
+}
+
+footer .footer-social img{
+    width: 70px;
+    height: 70px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+
+
