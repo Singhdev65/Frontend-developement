@@ -20,6 +20,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -29,6 +33,30 @@ header{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        max-width:1152px;
+    }
 }
 
 .branding{
@@ -436,6 +464,69 @@ footer .footer-social img{
     padding: 0.5rem;
     border-radius: 50%;
     margin-top: 1rem;
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamburger{
+    position: absolute;
+    top:40px;
+    right: 50px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all 0.9s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-nav ul{
+    list-style: none;
+}
+
+.mobile-nav ul a{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+@media (max-width: 900px){
+    header #main-nav{
+        display:none;
+    }
+
+    .hamburger{
+        color: var(--light);
+    }
 }
 
 
